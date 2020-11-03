@@ -33,3 +33,12 @@ class Cliente{
     saldo;
 }
 
+E para criar um novo cliente, fazemos o seguinte:
+
+const cliente1 = new Cliente();
+
+//Cliente 1
+cliente1.nome = 'Ricardo';
+cliente1.cpf = 11122233300;
+cliente1.agencia = 1001;
+cliente1.saldo = 0;
