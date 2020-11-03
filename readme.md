@@ -42,3 +42,6 @@ cliente1.nome = 'Ricardo';
 cliente1.cpf = 11122233300;
 cliente1.agencia = 1001;
 cliente1.saldo = 0;
+
+Quando damos um new Cliente por exemplo, isso se chama objeto, dai vem o nome programação orientada a objeto. Ou seja estamos criando um novo objeto a partir deste molde.
+O cliente1 é uma instancia da nossa classe Cliente.
