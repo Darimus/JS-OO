@@ -1,3 +1,10 @@
+class Cliente{
+    nome;
+    cpf;
+    angencia;
+    saldo;
+}
+
 const cliente1Nome = 'Ricardo';
 const cliente1CPF = 11122233300;
 const cliente1Agencia = 1001;

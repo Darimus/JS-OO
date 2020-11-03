@@ -9,4 +9,27 @@ Ao longo do curso pode ser que eles coloquem mais funcionalidades dentro do prog
 
 2- Atualmente estamos repetindo muito as linhas de código, pois inicialmente temos, nome, cpf, saldo e agencia. Toda essa estrutura está sendo repetida e isso não é legal, imagina se temos dezenas de clientes e precisamos agora adicionar RG por exemplo, vamos ter que ir manualmente e adicionar em todos esses 'n' clientes.
 
-3- 
+## Classe:
+
+1- Uma classe seria um molde ou seja, quando temos que repetir varias vezes certas informações, como nome, cpf, saldo e agencia.
+
+2- Ou seja, vamos trabalhar com classes para resolver esses problemas de repeticao.
+
+3- Vamos ver a estrutura básica de como criar uma classe:
+
+class NomeDaClasse {
+    bloco de definição
+}
+
+Muito importante dar um bom nome para classe.
+Dentro da classe, não chamamos de variaveis as coisas e sim de ATRIBUTOS, é o mesmo conceito.
+
+Nossa estrutura no código ficou a seguinte:
+
+class Cliente{
+    nome;
+    cpf;
+    angencia;
+    saldo;
+}
+
