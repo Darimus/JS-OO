@@ -79,3 +79,17 @@ This quer dizer este.
 
 5- Atributo privado, atualmente não foi implementado o sistema de private do JS (#saldo) <-- Sintaxe proposta.
 Porém as boas praticas "Resolveram" isso, todo atributo que estiver com _saldo no começo do nome é privado e não deve ser chamado fora do metodo!
+
+## Sobre return:
+
+1- Se queremos devolver um valor para quem chamou a função, precisamos fazer um retorno com a instrução return seguida daquilo que deve ser devolvido, nesse caso o próprio valor.
+
+2- No JavaScript, se um método não possui a palavra-chave return - ou seja, se ele não devolve um valor explicitamente -, ele sempre devolve um undefined. Outra característica interessante é que toda vez que um método encontra a palavra-chave return, a sua execução é encerrada. Sendo assim, se passarmos a instrução return valor para antes da nossa condicional e executarmos nosso código, o 50 será exibido no console, mas o saque não será efetuado com sucesso.
+
+3- Podemos também usar o return como early retunr, que evita que tenhamos muitos if's dentro de if's e assim dificultando a leitura do código, básicamente, estamos colocando as condições que NÃO queremos primeiro e dando return e deixando a execução para o final, caso tudo seja false ele opera, vou deixar um exemplo para melhor entendimento:
+
+ depositar(valor) {
+        if (valor <= 0) return 
+        this._saldo += valor;
+    }
+Ou seja, ele só vai executar o this._saldo se o primeiro if foi falso e não se ele for verdadeiro.
