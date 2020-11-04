@@ -76,3 +76,6 @@ contaCorrenteRicardo.saldo = 100;
 4- Agora o metodo sacar retorna um valor, e criamos uma condicional para o cliente não ficar negativo, ou seja, nunca teremos menos que 0 em conta.
 Então this.saldo (quer dizer, que o saldo desta conta(seja ela qual for), tem que ser maior ou igual ao valor que desejamos sacar, caso contrario ele não entra na condição, ao entrar na condição do if vamos pegar this.saldo e subtrair do valor).
 This quer dizer este.
+
+5- Atributo privado, atualmente não foi implementado o sistema de private do JS (#saldo) <-- Sintaxe proposta.
+Porém as boas praticas "Resolveram" isso, todo atributo que estiver com _saldo no começo do nome é privado e não deve ser chamado fora do metodo!
