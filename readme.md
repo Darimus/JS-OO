@@ -93,3 +93,9 @@ Porém as boas praticas "Resolveram" isso, todo atributo que estiver com _saldo 
         this._saldo += valor;
     }
 Ou seja, ele só vai executar o this._saldo se o primeiro if foi falso e não se ele for verdadeiro.
+
+## Modularizamos:
+
+1- Vamos trabalhar com modulos, para melhor manutenção e não ter arquivos gigantes com milhoes de linhas de códigos.
+
+2- Até o momento, separamos os modulos em dois arquivos separados o ContaCorrente.js e Cliente.js, veja que os arquivos estão com letra maiuscula no inicio, sendo assim identificando que se trata de um arquivo de modulo.
