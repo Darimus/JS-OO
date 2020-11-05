@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do ByteBank para seus clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darimus/JS-OO.git"
+  },
+  "author": "Bruno Passos",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Darimus/JS-OO/issues"
+  },
+  "homepage": "https://github.com/Darimus/JS-OO#readme"
+}
