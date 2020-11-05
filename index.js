@@ -8,7 +8,8 @@ cliente1.cpf = 11122233300;
 
 const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.agencia = 1001;
-contaCorrenteRicardo.depositar(100);
+contaCorrenteRicardo.cliente = cliente1;
+contaCorrenteRicardo.depositar(1000);
 
 const valorSacado = contaCorrenteRicardo.sacar(50);
 
@@ -19,8 +20,10 @@ cliente2.cpf = 22233344400;
 
 const contaCorrenteBruno = new ContaCorrente();
 contaCorrenteBruno.agencia = 1002;
-contaCorrenteBruno.depositar(0);
+contaCorrenteBruno.cliente = cliente2;
+contaCorrenteBruno.depositar(100);
 
+contaCorrenteRicardo.transferir(500, contaCorrenteBruno);
 
 //Logs
-console.log(valorSacado);
+console.log(contaCorrenteBruno);

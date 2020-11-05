@@ -156,3 +156,22 @@ Como os módulos JS são uma coisa nova e experimental, dentro desse interpretad
 Então, esta é a opção que eles encontraram para deixar quem quisesse usar os módulos JS conseguir configurar a ferramenta para fazer os testes, e quem não quisesse não teria problemas e não precisaria mudar nenhuma configuração.
 
 Se você quiser saber mais sobre as propriedades que esse arquivo suportam você pode encontrá-las nesta página da documentação (https://docs.npmjs.com/cli/v6/configuring-npm/package-json).
+
+## Sobre o metodo transferir:
+
+1- Inicialmente vamos atualizar com este novo metodo o arquivo da conta corrente, que possui as informações de saldo.
+
+2- Este metodo vai receber dois parametros, sendo ele valor e conta, pois queremos saber o valor que ira ser transferido e para qual conta ele sera transferido:
+
+transferir(valor, conta) {
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valorSacado);
+    }
+
+Criamos uma variavel de nome valorSacado que ira receber o metodo sacar com o parametro de valor, logo depois o valor sacado ira passar pelo metodo depositar (ja com todas as suas regras) e ira jogar na conta correspondente.
+
+3- Para chamar e executar este metodo:
+
+contaCorrenteRicardo.transferir(500, contaCorrenteBruno);
+
+Estamos transferindo da conta do Ricardo para conta do Bruno 500 reais.
