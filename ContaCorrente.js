@@ -8,6 +8,13 @@ export class ContaCorrente {
     _cliente;
 //Fim Atributos
 
+//Construtores
+constructor(agencia, cliente){
+    this.agencia = agencia;
+    this._cliente = cliente;
+}
+//Fim construtores
+
 //Acessores
     set cliente(novoValor){
         if(novoValor instanceof Cliente){

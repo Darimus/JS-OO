@@ -192,3 +192,5 @@ Estamos transferindo da conta do Ricardo para conta do Bruno 500 reais.
 const cliente1 = new Cliente('Ricardo', 11122233300);
 
 Sendo assim, sem a necessidade de chamar os metodos ou atributos para atribuir a eles os valores.
+
+5- Nem sempre é interessante ter construtores para deixar o código 'menor', as vezes temos que ter muitos parametros e desta forma não é legal. Analisar sempre a demanda do projeto e ter nomes interessantes para os metodos.
