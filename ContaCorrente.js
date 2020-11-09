@@ -3,8 +3,8 @@ import { Cliente } from "./Cliente.js";
 export class ContaCorrente {
 
 //Atributos
-    agencia;
-    
+    static numeroDeContas = 0;
+    agencia;  
     _cliente;
 //Fim Atributos
 
@@ -12,6 +12,7 @@ export class ContaCorrente {
 constructor(agencia, cliente){
     this.agencia = agencia;
     this._cliente = cliente;
+    ContaCorrente.numeroDeContas += 1;
 }
 //Fim construtores
 

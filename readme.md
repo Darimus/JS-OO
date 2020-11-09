@@ -194,3 +194,21 @@ const cliente1 = new Cliente('Ricardo', 11122233300);
 Sendo assim, sem a necessidade de chamar os metodos ou atributos para atribuir a eles os valores.
 
 5- Nem sempre é interessante ter construtores para deixar o código 'menor', as vezes temos que ter muitos parametros e desta forma não é legal. Analisar sempre a demanda do projeto e ter nomes interessantes para os metodos.
+
+## Static:
+
+1- Se quisermos saber o número de contas no total que temos em nosso sistema? Devemos criar um atributo para contar elas e um contador para ir somando a cada chamada de criaçao do construtor de contas.
+
+2- Neste caso iremos criar um atributos estatico que vale para todos os metodos e construtores.
+
+3- Com isso, toda vez que o construtor de ContaCorrente for chamado, somaremos 1 ao atributo numeroDeContas da classe ContaCorrente como um todo, e não de um objeto específico. Inclusive, se executarmos nosso código nesse ponto, repare que não mais receberemos os valores de numeroDeContas.
+
+4- Como fazer:
+
+static numeroDeContas = 0;
+
+constructor(agencia, cliente){
+    this.agencia = agencia;
+    this._cliente = cliente;
+    ContaCorrente.numeroDeContas += 1;
+}
