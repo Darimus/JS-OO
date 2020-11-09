@@ -1,10 +1,14 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente {
+
+//Atributos
     agencia;
     
     _cliente;
+//Fim Atributos
 
+//Acessores
     set cliente(novoValor){
         if(novoValor instanceof Cliente){
             this._cliente = novoValor;
@@ -20,7 +24,9 @@ export class ContaCorrente {
     get saldo(){
         return this._saldo;
     }
+//Fim Acessores
 
+//Metodos
     sacar(valor) {
         if (this._saldo >= valor){
             this._saldo -= valor;
@@ -39,3 +45,4 @@ export class ContaCorrente {
         conta.depositar(valorSacado);
     }
 }
+//Fim Metodos

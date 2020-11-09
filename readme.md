@@ -175,3 +175,20 @@ Criamos uma variavel de nome valorSacado que ira receber o metodo sacar com o pa
 contaCorrenteRicardo.transferir(500, contaCorrenteBruno);
 
 Estamos transferindo da conta do Ricardo para conta do Bruno 500 reais.
+
+## Construtor:
+
+1- Agora nos deixamos o cpf privado, pois o numero dado de cpf nunca muda e se muda, deve ser bem raro o caso.
+
+2- Entretanto, só queremos que essa atribuição seja feita no momento da criação de um novo Cliente, em nenhum outro momento do ciclo de vida do nosso objeto. Para essa e outras situações existem os construtores (constructor()), uma função especial que recebe, por exemplo, os atributos que a classe precisa para criar um objeto - nesse caso, nome e cpf.
+
+3-  constructor(nome, cpf){
+        this.nome = nome;
+        this._cpf = cpf;
+    }
+
+4- Com esse construtor, podemos já iniciar a criação de um cliente com os parametros:
+
+const cliente1 = new Cliente('Ricardo', 11122233300);
+
+Sendo assim, sem a necessidade de chamar os metodos ou atributos para atribuir a eles os valores.
