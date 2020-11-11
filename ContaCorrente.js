@@ -9,7 +9,7 @@ export class ContaCorrente {
 //Fim Atributos
 
 //Construtores
-constructor(agencia, cliente){
+constructor(cliente, agencia){
     this.agencia = agencia;
     this._cliente = cliente;
     this._saldo = 0;
