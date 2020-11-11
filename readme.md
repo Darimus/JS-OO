@@ -230,3 +230,14 @@ constructor(agencia, cliente){
 
 2- Primeiramente vamos criar uma conta poupança.
 
+## Extends:
+
+1- Agora se precisarmos de informações de outra classe, podemos estender informações já existentes de outra classe.
+
+Ex:
+
+export class ContaCorrente extends Conta {
+    ...
+}
+
+Agora tudo que existe na classe Conta também pode ser utilizado pela classe ContaCorrente. Eliminando assim, muitas linhas de códigos repetidas.

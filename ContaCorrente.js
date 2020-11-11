@@ -1,6 +1,7 @@
 import { Cliente } from "./Cliente.js";
+import { Conta } from "./Conta.js";
 
-export class ContaCorrente {
+export class ContaCorrente extends Conta {
 
 //Atributos
     static numeroDeContas = 0;
