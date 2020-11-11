@@ -2,57 +2,11 @@ import { Cliente } from "./Cliente.js";
 import { Conta } from "./Conta.js";
 
 export class ContaCorrente extends Conta {
-
-//Atributos
     static numeroDeContas = 0;
-    // agencia; Estes atributos já estão sendo criados e referenciados dentro do construtor 
-    //_cliente;
-//Fim Atributos
 
 //Construtores
-constructor(cliente, agencia){
-    this.agencia = agencia;
-    this._cliente = cliente;
-    this._saldo = 0;
-    ContaCorrente.numeroDeContas += 1;
-}
-//Fim construtores
-
-//Acessores
-    set cliente(novoValor){
-        if(novoValor instanceof Cliente){
-            this._cliente = novoValor;
-        }
-    }
-
-    get cliente(){
-        return this._cliente;
-    }
-
-    _saldo = 0;
-
-    get saldo(){
-        return this._saldo;
-    }
-//Fim Acessores
-
-//Metodos
-    sacar(valor) {
-        if (this._saldo >= valor){
-            this._saldo -= valor;
-
-            return valor;
-        }
-    }
-
-    depositar(valor) {
-        if (valor <= 0) return 
-        this._saldo += valor;
-    }
-
-    transferir(valor, conta) {
-        const valorSacado = this.sacar(valor);
-        conta.depositar(valorSacado);
+    constructor(cliente, agencia){
+        super(cliente, agencia, 0);
+        ContaCorrente.numeroDeContas += 1;
     }
 }
-//Fim Metodos

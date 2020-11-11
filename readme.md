@@ -241,3 +241,4 @@ export class ContaCorrente extends Conta {
 }
 
 Agora tudo que existe na classe Conta também pode ser utilizado pela classe ContaCorrente. Eliminando assim, muitas linhas de códigos repetidas.
+Isso é o que chamamos de herança, a ContaCorrente está herdando tudo da classe Conta.
