@@ -195,6 +195,17 @@ Sendo assim, sem a necessidade de chamar os metodos ou atributos para atribuir a
 
 5- Nem sempre é interessante ter construtores para deixar o código 'menor', as vezes temos que ter muitos parametros e desta forma não é legal. Analisar sempre a demanda do projeto e ter nomes interessantes para os metodos.
 
+6- No novo modulo do curso, é falado que alguns atributos (não sei se todos), podem sser criados dentro do constructor e sendo assim, ficando sem a necessidade de declarar eles fora do constructor, pois, já criamos e refenciamos. 
+Ex:
+
+constructor (saldoInicial, cliente, agencia){
+        this._saldo = saldoInicial;
+        this._cliente = cliente;
+        this._agencia = agencia;
+    }
+    
+Já estamos criando automaticamente o _saldo em privado e referenciando de onde ele ira tirar os dados para receber algum valor.
+
 ## Static:
 
 1- Se quisermos saber o número de contas no total que temos em nosso sistema? Devemos criar um atributo para contar elas e um contador para ir somando a cada chamada de criaçao do construtor de contas.
@@ -212,3 +223,10 @@ constructor(agencia, cliente){
     this._cliente = cliente;
     ContaCorrente.numeroDeContas += 1;
 }
+
+## Continuidade do curso:
+
+1- Agora vamos aprimorar nosso conhecimento e colocar novas funções em nosso banco.
+
+2- Primeiramente vamos criar uma conta poupança.
+

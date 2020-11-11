@@ -4,14 +4,15 @@ export class ContaCorrente {
 
 //Atributos
     static numeroDeContas = 0;
-    agencia;  
-    _cliente;
+    // agencia; Estes atributos já estão sendo criados e referenciados dentro do construtor 
+    //_cliente;
 //Fim Atributos
 
 //Construtores
 constructor(agencia, cliente){
     this.agencia = agencia;
     this._cliente = cliente;
+    this._saldo = 0;
     ContaCorrente.numeroDeContas += 1;
 }
 //Fim construtores
