@@ -203,7 +203,7 @@ constructor (saldoInicial, cliente, agencia){
         this._cliente = cliente;
         this._agencia = agencia;
     }
-    
+
 Já estamos criando automaticamente o _saldo em privado e referenciando de onde ele ira tirar os dados para receber algum valor.
 
 ## Static:
