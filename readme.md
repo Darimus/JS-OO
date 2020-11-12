@@ -230,6 +230,8 @@ constructor(agencia, cliente){
 
 2- Primeiramente vamos criar uma conta poupança.
 
+3- Atualmente temos um pequeno problema com a nossa aplicação, nossa classe Conta, pode ser usada para criar uma 'nova' conta e isso não deve ser permitido, pois queremos que ela somente seja herdada para outras classes. Então devemos prevenir de alguém instanciar ela.
+
 ## Extends:
 
 1- Agora se precisarmos de informações de outra classe, podemos estender informações já existentes de outra classe.
@@ -258,3 +260,19 @@ sacar(valor) {
     }
 
 Ou seja, estamos pegando o metodo sacar da classe Conta e chamando ele dentro da classe ContaCorrente, e mudando a taxa de saque.
+
+
+## Throw Error (Tentando impedir que o desenvolvedor instancie um metodo que não deveria):
+
+1- Com a nossa classe Conta, queremos que ela se mantenha somente para ser herdada e não instanciada.
+
+2- Um solução para isso é lançar um erro para o desenvolvedor e parar a aplicação.
+Ex:
+
+if(this.constructor == Conta){
+    throw new Error('Você não deveria instanciar um objeto do tipo Conta');
+}
+
+Nesta linha de código, estamos jogando um erro forçado para o desenvolvedor.
+
+3- Ao longo do curso vamos ver como trabalhar de maneira melhor isto, mas até o momento foi a solução proporcionada pelo professor.

@@ -4,6 +4,10 @@ export class Conta {
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
+
+        if(this.constructor == Conta){
+            throw new Error('Você não deveria instanciar um objeto do tipo Conta');
+        }
     }
 
     //Acessores
@@ -18,7 +22,6 @@ export class Conta {
     }
 
     _saldo = 0;
-
     get saldo(){
         return this._saldo;
     }
