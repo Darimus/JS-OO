@@ -9,6 +9,7 @@ export class ContaCorrente extends Conta {
         ContaCorrente.numeroDeContas += 1;
     }
 
+    //O metodo sacar está sobreescrevendo o comportamento de sacar da classe mãe
     sacar(valor) {
 
         let taxa = 1.1;

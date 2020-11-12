@@ -242,3 +242,19 @@ export class ContaCorrente extends Conta {
 
 Agora tudo que existe na classe Conta também pode ser utilizado pela classe ContaCorrente. Eliminando assim, muitas linhas de códigos repetidas.
 Isso é o que chamamos de herança, a ContaCorrente está herdando tudo da classe Conta.
+
+## Um pouco sobre sobreescreve metodos:
+
+1- Para não precisarmos ter códigos repetidos e com comportamentos levemente diferentes, podemos sobreescrever alguns metodos para assim manipular melhor nosso código.
+
+2- Na classe Cliente temos todo o nosso modelo de sacar, sendo assim, queremos modificar a taxa de saque da conta corrente, então devemos chamar o metodo e sobreescrever um comportamento dentro dele.
+Ex:
+
+//Dentro do arquivo ContaCorrente
+sacar(valor) {
+
+        let taxa = 1.1;
+        return this._sacar(valor, taxa);
+    }
+
+Ou seja, estamos pegando o metodo sacar da classe Conta e chamando ele dentro da classe ContaCorrente, e mudando a taxa de saque.
