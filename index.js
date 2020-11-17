@@ -21,9 +21,14 @@ contaPoupancaRicardo.sacar(5);
 
 //Funcionarios
 const gerenteBruno = new Gerente ('Bruno', 7000, 11110000000);
-const diretorBruno = new Diretor ('Passos', 20000, 12345678900);
+gerenteBruno.cadastrarSenha('123');
 
-const estaLogado = SistemaAutenticacao.login(diretor, 123);
+const diretorBruno = new Diretor ('Passos', 20000, 12345678900);
+diretorBruno.cadastrarSenha('1234');
+
+const gerenteEstaLogado = SistemaAutenticacao.login(gerenteBruno, '123');
+const diretorEstaLogado = SistemaAutenticacao.login(diretorBruno, '1234');
+
 
 //Logs
-console.log(estaLogado);
+console.log(gerenteEstaLogado, diretorEstaLogado);
