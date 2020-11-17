@@ -6,7 +6,7 @@ import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
 import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
 
 //Cliente 1
-const cliente1 = new Cliente('Ricardo', 11122233300);
+const cliente1 = new Cliente('Ricardo', 11122233300, '1234');
 
 //Conta Corrente
 const contaCorrenteRicardo = new ContaCorrente(cliente1, 1001, 0);
