@@ -276,3 +276,7 @@ if(this.constructor == Conta){
 Nesta linha de código, estamos jogando um erro forçado para o desenvolvedor.
 
 3- Ao longo do curso vamos ver como trabalhar de maneira melhor isto, mas até o momento foi a solução proporcionada pelo professor.
+
+## Metodo Duck Type
+
+1- https://pt.wikipedia.org/wiki/Duck_typing
