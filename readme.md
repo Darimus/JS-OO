@@ -280,3 +280,17 @@ Nesta linha de código, estamos jogando um erro forçado para o desenvolvedor.
 ## Metodo Duck Type
 
 1- https://pt.wikipedia.org/wiki/Duck_typing
+
+## Conclusão:
+
+1- Aprendemos a compartilhar classes e tornar ela uma classe "Mãe" onde temos todos os compartamentos centralizado nela.
+
+2- Aprendemos a como mudar alguns compartamentos especificos de classes herdadas.
+
+3- Vimos classes abstratas e assim ninguém consegue instanciar elas.
+
+4- Metodo abstrato, assim todas as classes tem este metodo, porém tem leves mudanças de comportamento dentro de cada um.
+
+5- Metodo privado.
+
+6- Vimos boas praticas também.
